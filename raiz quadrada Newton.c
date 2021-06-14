@@ -15,23 +15,23 @@
 
 double raizQuadrada(double a, double epsilon) {
 	
-	//representa a primeira operaçao para realização do cálculo, o "X0" proposto na equação de Newton.
-    double contaInicial;
+//representa a primeira operaçao para realização do cálculo, o "X0" proposto na equação de Newton.
+double contaInicial;
 
-	//representa a primeira operaçao "Xi+1" na equaçao newtoniana.
-    double contaPrimaria;
+//representa a primeira operaçao "Xi+1" na equaçao newtoniana.
+double contaPrimaria;
 
-	//representa as operaçoes "Xi" subsquentes ("Xi+1") na proposta por Newton.
-    double contaSecundaria;
+//representa as operaçoes "Xi" subsquentes ("Xi+1") na proposta por Newton.
+double contaSecundaria;
 
-	//atribui o valor necessario para a primeira operaçao necessaria na conta proposta por Newton.
-	contaInicial = (a*0.5);
+//atribui o valor necessario para a primeira operaçao necessaria na conta proposta por Newton.
+contaInicial = (a*0.5);
 
-	//valor da primeira operaçao "Xi" na operaçao proposta por Newton.
-	contaPrimaria = (0.5)*(contaInicial + (a / contaInicial));
+//valor da primeira operaçao "Xi" na operaçao proposta por Newton.
+contaPrimaria = (0.5)*(contaInicial + (a / contaInicial));
 
-	//Valor da operaçao |"Xi+1" - "Xi"|
-	double valorModulo;
+//Valor da operaçao |"Xi+1" - "Xi"|
+double valorModulo;
 
 	//verifiação das condiçoes necessarias para realizaçao da operaçao
 	if (a < 0 || epsilon <= 0 || epsilon >= 1){
